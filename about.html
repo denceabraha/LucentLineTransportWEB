@@ -204,9 +204,12 @@
                     <div class="col-lg-4 sub-one-left mt-lg-0 mt-4">
                         <h6>Contact Info</h6>
                         <div class="footer-contact">
-                            <p><i class="fas fa-envelope me-2"></i>info@portalscompany.com</p>
-                            <p><i class="fas fa-phone-alt me-2"></i> +965 9402 5195</p>
-                            <p><i class="fas fa-map-marker-alt me-2"></i>Al Dabbous mall, Floor 4 O ce No. C-12Habeeb Munawer St. Block 4, Farwaniya, Kuwait</p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i><strong>Dubai Office:</strong> Bin Dasmal Building - 1, Al Quoz Industrial First, Dubai, UAE</p>
+                            <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@lucentgo.com">info@lucentgo.com</a></p>
+                            <p><i class="fas fa-phone-alt me-2"></i><a href="tel:+971544945098">+971 54 494 5098</a></p>
+                            <p class="mt-3"><i class="fas fa-map-marker-alt me-2"></i><strong>Kuwait Office:</strong> Al Dabbous Mall, Floor 4, Office No. C-12, Habeeb Munawer St., Block 4, Farwaniya, Kuwait</p>
+                            <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@portalscompany.com">info@portalscompany.com</a></p>
+                            <p><i class="fas fa-phone-alt me-2"></i><a href="tel:+96594025195">+965 9402 5195</a></p>
                         </div>
                     </div>
                 </div>
@@ -217,6 +220,16 @@
         </section>
     </footer>
 
+    <a href="https://wa.me/971544945098?text=Hello%20Lucent%20Line%2C%20I%20need%20help%20with%20transport%20and%20logistics."
+       class="whatsapp-float"
+       onclick="openWhatsAppChat(event, this)"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with Lucent Line on WhatsApp"
+       title="Chat on WhatsApp">
+        <span class="fab fa-whatsapp" aria-hidden="true"></span>
+    </a>
+
     <!-- Move Top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
@@ -226,6 +239,15 @@
     <script src="assets/js/theme-change.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
+        function openWhatsAppChat(event, link) {
+            event.preventDefault();
+            const webUrl = link.href;
+            const appUrl = "whatsapp://send?phone=971544945098&text=Hello%20Lucent%20Line%2C%20I%20need%20help%20with%20transport%20and%20logistics.";
+            window.location.href = appUrl;
+            setTimeout(function () {
+                window.open(webUrl, "_blank");
+            }, 700);
+        }
         window.onscroll = function() { scrollFunction() };
         function scrollFunction() {
             document.getElementById("movetop").style.display = 
