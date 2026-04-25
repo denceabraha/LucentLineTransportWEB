@@ -199,6 +199,16 @@
         </section>
     </footer>
 
+    <a href="https://wa.me/971544945098?text=Hello%20Lucent%20Line%2C%20I%20need%20help%20with%20transport%20and%20logistics."
+       class="whatsapp-float"
+       onclick="openWhatsAppChat(event, this)"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with Lucent Line on WhatsApp"
+       title="Chat on WhatsApp">
+        <span class="fab fa-whatsapp" aria-hidden="true"></span>
+    </a>
+
     <!-- Move Top Button -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
@@ -208,6 +218,15 @@
     <script src="assets/js/theme-change.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
+        function openWhatsAppChat(event, link) {
+            event.preventDefault();
+            const webUrl = link.href;
+            const appUrl = "whatsapp://send?phone=971544945098&text=Hello%20Lucent%20Line%2C%20I%20need%20help%20with%20transport%20and%20logistics.";
+            window.location.href = appUrl;
+            setTimeout(function () {
+                window.open(webUrl, "_blank");
+            }, 700);
+        }
         window.onscroll = function() { scrollFunction() };
         function scrollFunction() {
             document.getElementById("movetop").style.display = 
